@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    
+</head>
+<body>
+.        <div id="space">
+     <h1 id="title">Workplace Survey</h1>
+     <p id="description">Please complete the survey</p>
+        </div>
+<form id="survey-form">
+        <fieldset id="border">
+          <div id="input-text">
+    <label for="name">Name:</label> 
+     <input id="name" type="text" required placeholder="Enter your name"></input>
+    <label for="email-label">Email:</label>
+     <input id="email" type="email" required placeholder="Enter your Email address"></input>
+    <label for="number">Age:</label>
+     <input id="number" type="number" min="10" max="99" required placeholder="Age"></input>
+    <label for="dropdown">Status:</label>
+     <select id="dropdown" name="status-dropdown" required>
+     <option value="" disabled selected>Select Status</option>    
+     <option value="Single">Single</option>
+     <option value="Married">Married</option>
+     <option value="Divorced">Divorced</option>
+     <option value="Other">Other</option>
+     </select>
+          </div>
+     
+          <div id="department">
+       <h2>Department</h2>         
+    <label for="type-one">
+      <input type="radio" id="type-one" name="department" value="HR" required> Human Resources
+      </label>
+      <br>
+    <label for="type-two">
+      <input type="radio" id="type-two" name="department" value="Safety"> Safety and Health
+      </label>
+      <br>
+    <label for="type-three">
+      <input type="radio" id="type-three" name="department" value="Finance"> Finance
+      </label>
+       <br>
+    <label for="type-four">
+      <input type="radio" id="type-four" name="department" value="Sales"> Sales
+      </label>
+      <br>
+    <label for="type-five">
+      <input type="radio" id="type-five" name="department" value="Marketing">Marketing
+      </label>
+      <br>
+          </div>
+
+          <div id="work-type">
+      <h3>Select prefered work type</h3>
+    <label for="on-site"><input type="checkbox" id="on-site" value="onsite" name="work" required>On-site</label><br>
+    <label for="remote"><input type="checkbox" id="remote" value="remote" name="work">Remote</label><br>
+          </div>
+          <div id="div-improve">
+            <p class="space">How would you like us to improve?</p>
+    <textarea id="improve" placeholder="comment" class="textera" minlength="10" maxlength="200" required></textarea>
+          </div>
+    <button id="submit" value="submit" class="button">submit</button>
+        
+      </fieldset>
+      </form>
+</body>
+</html>
