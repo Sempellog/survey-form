@@ -4,7 +4,22 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 100%;
 }
+/* add height to fill the background*/
+
+html {
+  height: 100%;
+}
+/* add height for full page height */
+
+form {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+/* add width to contain  */
 
 #space {
   display: flex;
@@ -13,19 +28,20 @@ body {
 }
 h1 {
   font-size: 36px;
-  font-color: #000000;
+  color: #000000; /*changed from 'font-color' to 'color'*/
 }
 
 #description {
   font-size: 20px;
-  font-color: #000000;
+  color: #000000; /* changed from 'font-color' to 'color'*/
   margin-top: 0;
 }
 
 fieldset {
-  margin: 0 25% 5% 25%;
+  margin: 0 auto; /* revised to center and remove excessive vertical gap */
   background-color: #ccccff;
   opacity: 0.8;
+  margin-bottom: 0; /* add to remove space */
   
 }
 
@@ -69,6 +85,7 @@ input[type="radio"] {
 #department > label {
   display: flex;
   align-items: center;
+  margin-bottom: 2px; /* add for spacing consistency */
 }
 
 
