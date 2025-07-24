@@ -10,13 +10,18 @@ This is a responsive survey form built as part of the [freeCodeCamp Responsive W
 
 - HTML5
 - CSS3
+- JavaScript
 - Git & GitHub
 
 ## 📁 Project Structure
 
 ├── index.html
 
-├── styles.css
+├── css
+  └── styles.css
+
+├── script.js
+  └── script.js
 
 └── README.md
 
@@ -29,14 +34,15 @@ This is a responsive survey form built as part of the [freeCodeCamp Responsive W
 - Checkboxes for work type preference
 - Textarea for additional comments
 - Responsive design with mobile-friendly layout
+- Error messages and password strength checker
 
 ## 📚 What I Learned
 
 - Structuring HTML forms using semantic elements
-- Aligning and styling form controls with CSS Flexbox
-- Applying input validation with HTML attributes (e.g., `required`, `min`, `max`, `maxlength`)
-- Hosting and updating projects using GitHub Pages
-- Creating a clean and readable layout
+- Styling form controls with CSS Flexbox
+- Adding input validation using both HTML and JavaScript
+- Hosting and updating projects via GitHub Pages
+- Improving form usability with real-time interactivity
 
 ## 🔒 License
 

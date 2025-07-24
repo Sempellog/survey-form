@@ -4,14 +4,13 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100%;
 }
-/* add height to fill the background*/
 
-html {
-  height: 100%;
+html, body{
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
-/* add height for full page height */
 
 form {
   width: 90%;
@@ -19,30 +18,29 @@ form {
   margin: 0 auto;
   padding: 1rem;
 }
-/* add width to contain  */
 
 #space {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+
 h1 {
   font-size: 36px;
-  color: #000000; /*changed from 'font-color' to 'color'*/
+  color: #000000;
 }
 
 #description {
   font-size: 20px;
-  color: #000000; /* changed from 'font-color' to 'color'*/
+  color: #000000; 
   margin-top: 0;
 }
 
 fieldset {
-  margin: 0 auto; /* revised to center and remove excessive vertical gap */
+  margin: 0 auto; 
   background-color: #ccccff;
   opacity: 0.8;
-  margin-bottom: 0; /* add to remove space */
-  
+  margin-bottom: 0; 
 }
 
 #input-text > label {
@@ -51,17 +49,25 @@ fieldset {
   flex-direction: column;
   margin-left: 5px;
 }
+
 #input-text > input {
   margin: 2px 5px;
   width: 95%;
-  height: 20px
- 
+  height: 20px;
 }
 
 #dropdown {
   width: 50%;
   height: 25px;
   margin-top: 2px;
+  margin-left: 5px;
+}
+
+#other-text {
+  display: none;
+  width: 50%;
+  height: 50px;
+  margin-top: 15px;
   margin-left: 5px;
 }
 
@@ -80,12 +86,12 @@ input[type="radio"] {
   margin-right: 10px;
   width: 15px;
   height: 15px;
-  margin: 0;
 }
+
 #department > label {
   display: flex;
   align-items: center;
-  margin-bottom: 2px; /* add for spacing consistency */
+  margin-bottom: 2px;
 }
 
 
@@ -98,14 +104,12 @@ h3 {
 input[type="checkbox"] {
   display: flex;
   align-items: center;
-  
 }
 
 #work-type > label {
   display: flex;
   align-items: center;
   margin: 0;
-  
 }
 
 #improve {
@@ -125,22 +129,6 @@ input[type="checkbox"] {
   margin-bottom: 20px;
 }
 
-
-  .button:hover {
-    background-color: #2b80b4;
-  }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+.button:hover {
+  background-color: #2b80b4;
+}

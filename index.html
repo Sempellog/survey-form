@@ -1,15 +1,14 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css"></link>
+    <link rel="stylesheet" href="css/styles.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8">
-    
+    <meta charset="utf-8"/>
+    <title>Workplace Survey</title>
 </head>
 <body>
-.        <div id="space">
+       <div id="space">
      <h1 id="title">Workplace Survey</h1>
      <p id="description">Please complete the survey</p>
         </div>
@@ -18,10 +17,13 @@
           <div id="input-text">
     <label for="name">Name:</label> 
      <input id="name" type="text" required placeholder="Enter your name"></input>
-    <label for="email-label">Email:</label>
+     <div id="name-error" style="color: red; font-size: 14px;"></div>
+    <label for="email">Email:</label>
      <input id="email" type="email" required placeholder="Enter your Email address"></input>
-    <label for="number">Age:</label>
-     <input id="number" type="number" min="10" max="99" required placeholder="Age"></input>
+     <div id="email-error" style="color: red; font-size: 14px;"></div>
+    <label for="age">Age:</label>
+     <input id="age" type="number" min="18" max="99" required placeholder="Age"></input>
+      <div id="age-error" style="color: red; font-size: 14px;"></div>
     <label for="dropdown">Status:</label>
      <select id="dropdown" name="status-dropdown" required>
      <option value="" disabled selected>Select Status</option>    
@@ -30,6 +32,10 @@
      <option value="Divorced">Divorced</option>
      <option value="Other">Other</option>
      </select>
+     <div id="other-container">
+      <textarea id="other-text" placeholder="Please specify other"></textarea>
+     </div>
+     <div id="status-error" style="color: red; font-size: 14px;"></div>
           </div>
      
           <div id="department">
@@ -58,16 +64,19 @@
 
           <div id="work-type">
       <h3>Select prefered work type</h3>
-    <label for="on-site"><input type="checkbox" id="on-site" value="onsite" name="work" required>On-site</label><br>
+    <label for="on-site"><input type="checkbox" id="on-site" value="onsite" name="work"
+      >On-site</label><br>
     <label for="remote"><input type="checkbox" id="remote" value="remote" name="work">Remote</label><br>
           </div>
           <div id="div-improve">
             <p class="space">How would you like us to improve?</p>
     <textarea id="improve" placeholder="comment" class="textera" minlength="10" maxlength="200" required></textarea>
           </div>
-    <button id="submit" value="submit" class="button">submit</button>
+          <div id="char-count" style="color: black; font-size: 14px;"></div>
+    <button id="submit" value="submit" class="button">Submit</button>
         
       </fieldset>
       </form>
+      <script src="script/script.js" defer></script>
 </body>
 </html>
